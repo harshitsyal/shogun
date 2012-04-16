@@ -15,13 +15,14 @@ for i=1:6,
 		features(j,i)=i*5+j;
 	end
 end
+features
 labels=[1;-1;0;0;0;1];
 labels=double(labels');
 realfeat=RealFeatures(features);
 feats_train=SparseRealFeatures();
 feats_train.obtain_from_simple(realfeat);
 
-C=1000;
+C=1000000;
 epsilon=1e-6;
 num_threads=1;
 labels=double(labels);
@@ -35,4 +36,4 @@ svm.set_bias_enabled(true);
 disp('reached');
 svm.train();
 svm.get_bias()
-svm.get_w();
+svm.get_w()
