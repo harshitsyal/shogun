@@ -44,6 +44,7 @@
  #include <shogun/machine/KernelMulticlassMachine.h>
  #include <shogun/machine/LinearMulticlassMachine.h>
  #include <shogun/classifier/svm/NewtonSVM.h>
+ #include <shogun/classifier/svm/TSVM.h>
 #ifdef USE_SVMLIGHT
  #include <shogun/classifier/svm/SVMLight.h>
  #include <shogun/classifier/svm/SVMLightOneClass.h>
