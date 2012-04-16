@@ -43,6 +43,7 @@
 %rename(SubGradientLPM) CSubGradientLPM;
 %rename(SubGradientSVM) CSubGradientSVM;
 %rename(NewtonSVM) CNewtonSVM;
+%rename(TSVM) CTSVM;
 #ifndef HAVE_PYTHON
 %rename(SVM) CSVM;
 #endif
@@ -121,6 +122,8 @@
 %include <shogun/machine/KernelMulticlassMachine.h>
 %include <shogun/machine/LinearMulticlassMachine.h>
 %include <shogun/classifier/svm/NewtonSVM.h>
+%include <shogun/classifier/svm/TSVM.h>
+
 
 #ifdef USE_SVMLIGHT
 

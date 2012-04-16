@@ -140,6 +140,9 @@ void initialize(struct vector_int *A, int32_t k);
 void GetLabeledData(struct data *Data_Labeled, const struct data *Data);
 /* extracts labeled data from Data and copies it into Data_Labeled */
 float64_t norm_square(const vector_double *A); /* returns squared length of A */
+/* Clears the temporary labeled data structure created */
+void Clear(struct data *a);
+
 
 /* ssl_train: takes data, options, uninitialized weight and output
    vector_doubles, routes it to the algorithm */
